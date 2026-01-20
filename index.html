@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faris Portfolio Web</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">Faris</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <h1>Halo, Saya Faris</h1>
+                <h2>Web portofolio</h2>
+                <p>Spesialis dalam HTML, CSS, JavaScript, PHP, dan Python. Membangun aplikasi web yang cepat, responsif, dan user-friendly.</p>
+                
+                <div class="tech-badges">
+                    <div class="tech-badge html">
+                        <i class="fab fa-html5"></i> HTML5
+                    </div>
+                    <div class="tech-badge css">
+                        <i class="fab fa-css3-alt"></i> CSS3
+                    </div>
+                    <div class="tech-badge js">
+                        <i class="fab fa-js-square"></i> JavaScript
+                    </div>
+                    <div class="tech-badge php">
+                        <i class="fab fa-php"></i> PHP
+                    </div>
+                    <div class="tech-badge python">
+                        <i class="fab fa-python"></i> Python
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> Lihat Proyek
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Hubungi Saya
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <div class="code-display">
+                    <div class="code-header">
+                        <div class="code-dot dot-red"></div>
+                        <div class="code-dot dot-yellow"></div>
+                        <div class="code-dot dot-green"></div>
+                        <span style="color: #64748b; font-size: 0.9rem;">skills.js</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="code-comment">// Tech Stack Saya</span></div>
+                        <div class="code-line"><span class="code-var">const</span> <span class="code-attr">skills</span> = [</div>
+                        <div class="code-line">&nbsp;&nbsp;{ <span class="code-attr">name</span>: <span class="code-value">"HTML5"</span>, <span class="code-attr">level</span>: <span class="code-value">"Expert"</span> },</div>
+                        <div class="code-line">&nbsp;&nbsp;{ <span class="code-attr">name</span>: <span class="code-value">"CSS3"</span>, <span class="code-attr">level</span>: <span class="code-value">"Advanced"</span> },</div>
+                        <div class="code-line">&nbsp;&nbsp;{ <span class="code-attr">name</span>: <span class="code-value">"JavaScript"</span>, <span class="code-attr">level</span>: <span class="code-value">"Advanced"</span> },</div>
+                        <div class="code-line">&nbsp;&nbsp;{ <span class="code-attr">name</span>: <span class="code-value">"PHP"</span>, <span class="code-attr">level</span>: <span class="code-value">"Intermediate"</span> },</div>
+                        <div class="code-line">&nbsp;&nbsp;{ <span class="code-attr">name</span>: <span class="code-value">"Python"</span>, <span class="code-attr">level</span>: <span class="code-value">"Intermediate"</span> }</div>
+                        <div class="code-line">];</div>
+                        <div class="code-line" style="margin-top: 1rem;"><span class="code-comment">// Siap untuk proyek Anda!</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title fade-in">Keahlian Teknis</h2>
+            <div class="skills-container">
+                <!-- HTML/CSS -->
+                <div class="skill-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon icon-html">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div>
+                            <h3>HTML & CSS</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Frontend Development</p>
+                        </div>
+                    </div>
+                    <ul class="skill-items">
+                        <li class="skill-item">
+                            <span>HTML5</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar progress-html"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>CSS3</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar progress-css"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>Responsive Design</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>CSS Framework</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon icon-js">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Client-side Scripting</p>
+                        </div>
+                    </div>
+                    <ul class="skill-items">
+                        <li class="skill-item">
+                            <span>Vanilla JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar progress-js"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>ES6+ Features</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>DOM Manipulation</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>AJAX & Fetch API</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- PHP -->
+                <div class="skill-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon icon-php">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div>
+                            <h3>PHP</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Server-side Scripting</p>
+                        </div>
+                    </div>
+                    <ul class="skill-items">
+                        <li class="skill-item">
+                            <span>PHP OOP</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar progress-php"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>MySQL Database</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>Laravel Basics</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>REST API</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Python -->
+                <div class="skill-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon icon-python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div>
+                            <h3>Python</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Scripting & Automation</p>
+                        </div>
+                    </div>
+                    <ul class="skill-items">
+                        <li class="skill-item">
+                            <span>Python Core</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar progress-python"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>Django Basics</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>Web Scraping</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span>Automation Scripts</span>
+                            <div class="skill-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Proyek dengan HTML, CSS, JS, PHP, Python</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Web App with PHP -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-bg">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistem Manajemen Konten</h3>
+                        <p>Aplikasi web dengan PHP dan MySQL untuk mengelola konten website secara dinamis.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1rem;">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Interactive Web with JS -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-bg">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Aplikasi Cuaca Real-time</h3>
+                        <p>Aplikasi web interaktif dengan JavaScript yang menampilkan informasi cuaca dari API.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">HTML5</span>
+                        </div>
+                        <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1rem;">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Python Automation -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <div class="project-bg">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Automation</span>
+                            <span>Web</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Scraper & Automation</h3>
+                        <p>Script Python untuk scraping data website dan otomatisasi tugas-tugas rutin.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">BeautifulSoup</span>
+                            <span class="project-tag">Selenium</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                        <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1rem;">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title fade-in">Hubungi Saya</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>farisstore393@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>+62 882 9787 7862</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Lokasi</h3>
+                            <p>Bogor, Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link fade-in">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link fade-in">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link fade-in">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link fade-in">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" class="form-control" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="@gmail.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project">Jenis Proyek</label>
+                            <select id="project" class="form-control" required>
+                                <option value="">Pilih jenis proyek</option>
+                                <option value="website">Website Static (HTML/CSS/JS)</option>
+                                <option value="webapp">Web Application (PHP/Python)</option>
+                                <option value="automation">Automation Script (Python)</option>
+                                <option value="consultation">Konsultasi Teknis</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Detail Proyek</label>
+                            <textarea id="message" class="form-control" placeholder="Jelaskan proyek Anda secara detail..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <a href="#home" class="footer-logo">Faris</a>
+                <p style="color: rgba(255, 255, 255, 0.7); margin-top: 1rem;">Web Developer dengan spesialisasi HTML, CSS, JavaScript, PHP, dan Python.</p>
+                <div class="tech-badges" style="margin-top: 1rem;">
+                    <div class="tech-badge html" style="font-size: 0.8rem; padding: 0.3rem 0.6rem;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-badge css" style="font-size: 0.8rem; padding: 0.3rem 0.6rem;">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-badge js" style="font-size: 0.8rem; padding: 0.3rem 0.6rem;">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="tech-badge php" style="font-size: 0.8rem; padding: 0.3rem 0.6rem;">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div class="tech-badge python" style="font-size: 0.8rem; padding: 0.3rem 0.6rem;">
+                        <i class="fab fa-python"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#">Website Development</a></li>
+                    <li><a href="#">Web Application</a></li>
+                    <li><a href="#">Python Automation</a></li>
+                    <li><a href="#">Technical Consultation</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Tautan</h4>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 Faris - Web Developer. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+<script src="script.js"></script>
+</body>
+</html>
